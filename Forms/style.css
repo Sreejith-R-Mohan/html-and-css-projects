@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/01/18/38/background-1789175_1280.png");
+}
+
+
+.reg-form{
+    width: 400px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin: 200px auto; 
+    padding: 10px 20px 30px;
+}
+
+.reg-form > h3{
+    text-align: center;
+    color: #D8A47F;
+    margin:15px 0px;
+    
+}
+
+.form-group > label{
+    display: block;
+}
+
+.form-group > input{
+    width: 100%;
+    /* This font-size property will set height to the input field */
+    font-size: 1.2em;
+    padding: 3px;
+    border: none;
+    border-radius: 4px;
+}
+
+.form-group > input:focus{
+    background-color:#ffff ;
+    color: #272932;
+    outline: 3px solid #F05D5E;
+    /* outline: 3px solid #0F7173; */
+}
+
+input{
+    margin: 5px 0px 15px;
+}
+
+.form-radio > [type = "radio"]{
+    accent-color: #0F7173;
+    transform: scale(1.2);
+}
+
+.btn{
+    text-align: center;
+}
+
+button{
+    margin-top: 10px;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-weight: bolder;
+    background-color: #0F7173;
+    color: #E7ECEF;
+    border: 2px solid #E7ECEF;
+    box-shadow: 2px 2px 2px #E7ECEF;
+}
+
+button:hover{
+    cursor: pointer;
+    color: #F05D5E;
+}
+
+button:active{
+    transform: scale(0.98);
+    box-shadow: 3px 3px 10px #E7ECEF;
+}
