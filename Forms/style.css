@@ -16,14 +16,15 @@ body{
     border-radius: 8px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    margin: 200px auto; 
+    margin: 150px auto; 
     padding: 10px 20px 30px;
 }
 
 .reg-form > h3{
     text-align: center;
-    color: #D8A47F;
-    margin:15px 0px;
+    color: #F05D5E;
+    margin:20px 0px 40px;
+    font-size: 25px;
     
 }
 
