@@ -1,0 +1,309 @@
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Cabin+Sketch&family=Grape+Nuts&family=Quintessential&display=swap');
+
+
+
+:root{
+    --primary-color:#ffbe0b;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.parent{
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.parent > nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+    /* this code will make the navbar sticky and fully visible */
+    /* there is a bug solve in the future */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+.parent nav .logo > img{
+    margin: 5px 0;
+    width: 110px;
+    height: 65px;
+    object-fit: cover;
+}
+
+.parent ul{
+    list-style: none;
+}
+
+
+.parent ul li{
+    margin: 0px 10px;
+    display: inline-block;
+}
+
+.parent ul li > a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+    position: relative;
+}
+
+.parent ul li > a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    /* background-color: black; */
+    display: block;
+}
+
+.parent ul li > a:hover::after{
+        /* modify it in the future */
+        transition: width 0.3s; 
+        background-color: var(--primary-color);
+        width: 100%;
+}
+
+
+.parent nav .icons i {
+    font-size: 16px;
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+.parent nav .icons i:hover{
+    color: var(--primary-color);
+}
+
+
+
+.parent .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 50px;
+}
+
+
+.parent .main .main-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.parent .main .main-text h3{
+    font-size: 50px;
+    font-family: 'Quintessential', serif;
+    margin-bottom: 20px;
+
+}
+
+.parent .main .main-text h3::first-letter{
+    font-size: 65px;
+    line-height: 40px;
+    font-family: 'Allison', cursive;
+    letter-spacing: 7px;
+    font-weight: 600;
+}
+
+
+.parent .main .main-text h3 span{
+    font-size: 65px;
+    color: var(--primary-color);
+    font-family: 'Grape Nuts', cursive;
+}
+
+.parent .main .main-image img{
+    width: 600px;
+    position: relative;
+    left: 10px;
+}
+
+
+.parent .main .description{
+    width: 600px;
+    text-align: justify;
+    line-height: 25px;
+    word-spacing: 3px;
+}
+
+
+
+.order{
+    display: inline-block;
+    width: 160px;
+    margin: 30px 0px;
+    padding: 10px 25px;
+    background-color: var(--primary-color);
+    border-radius:8px;
+    cursor: pointer;
+}
+
+
+.order a {
+    margin-right: 2px;
+    text-decoration: none;
+    color: white;
+}
+
+.order i{
+    transition: 0.3s;
+}
+
+.order:hover i{
+    transform: translateX(15px);
+}
+
+
+.about{
+    margin: 30px 10px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-img img{
+    margin-top: 30px;
+    width: 700px;
+
+}
+
+.aboutus{
+    height: 500px;
+    width: 600px;
+    margin-right: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutus h3{
+    font-size: 40px;
+
+}
+
+.aboutus h3 span{
+    color: var(--primary-color);
+    font-family: 'Grape Nuts', cursive;
+}   
+
+.aboutus p{
+    text-align: justify;
+}
+
+
+
+/* Menu styling */
+.menu{
+    padding: 20px;
+}
+
+
+.menu-head{
+    margin: 10px;
+    text-align: center;
+}
+
+.menu-head h3{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.menu-head h3 span{
+    color: var(--primary-color);
+    font-family: 'Grape Nuts', cursive;
+}
+
+.menu-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px 10px;
+}
+
+
+.menu-card{
+    width: 550px;
+    height: 220px;
+    padding:10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    display: flex;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+}
+
+
+
+
+.menu-card:hover{
+    transform: scale(1.05);
+}
+
+
+
+.menu-card img{
+    border-radius: 10px;
+}
+
+.menu-card-content{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.menu-card-content h5{
+    text-align: justify;
+}
+
+
+.menu-card:hover .rating >i{
+    color: var(--primary-color);
+}
+
+.add_cart{
+    background-color: var(--primary-color);
+    width: 160px;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+
+.add_cart a {
+    color: white;
+    text-decoration: none;
+}
+
+.add_cart i {
+    margin-left: 2px;
+    transition: 0.3s ease-in;
+}
+
+.add_cart:hover i{
+    transform: translateX(15px) rotate(45deg);
+}
+
