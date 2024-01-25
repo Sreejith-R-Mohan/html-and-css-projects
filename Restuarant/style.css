@@ -436,7 +436,118 @@ html{
     transform: scale(1);
 }
 
+.customer-review{
+    margin: 5px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.customer-review-head >h3{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.customer-review-head h3 span{
+    color: var(--primary-color);
+    font-family: 'Grape Nuts', cursive;
+}
+
+.customer{
+    margin: 30px auto;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.customer-card{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    border-radius: 20px;
+    height: 550px;
+    width: 300px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
 
 
 
+.customer-name-image{
+    overflow: hidden;
+    transition: 0.3s;
+}
 
+.customer-name-image > img{
+    border: 5px solid #cccccc;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 6px;
+}
+
+.customer-name-image > h2{
+    text-align: center;
+    font-size: 25px;
+}
+.customer-card:hover .customer-name-image{
+    transform: translateY(-50px);
+}
+
+.customer-card:hover .rating{
+    transform: translateY(-30px);
+}
+
+
+.customer-card:hover .social-media{
+    transform: translateY(-20px);
+}
+
+
+.rating{
+    transition: 0.3s;
+}
+
+
+
+.rating > i {
+    color: var(--primary-color);
+    
+}
+
+.social-media {
+    display: flex;
+    width: 100px;
+    justify-content: space-evenly;
+    display: none;
+    animation: fadeIn 1.2s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.social-media > i{
+    cursor: pointer;
+}
+
+
+.social-media > i:hover{
+    color: var(--primary-color);
+}
+.customer-card:hover .social-media{
+    display: flex;
+}
+
+
+.review-content > p{
+    padding: 0px 10px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
