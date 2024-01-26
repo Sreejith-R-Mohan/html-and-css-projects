@@ -551,3 +551,136 @@ html{
     text-align: justify;
     margin-bottom: 10px;
 }
+
+
+
+/* Enquire now section */
+.enquiry-form-team{
+    margin: 15px auto;
+}
+
+.enquiry-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-head > h3{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.form-head h3 span{
+    color: var(--primary-color);
+    font-family: 'Grape Nuts', cursive;
+}
+
+.form-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-image{
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+.form-image > img{
+    position: absolute;
+    top: -140px;
+    width: inherit;
+    
+}
+
+
+.form{
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+.form >h3{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-family: 'Grape Nuts', cursive;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    align-items: flex-start ;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.form-group{
+    margin: 10px;
+}
+.form .form-group input{
+    height: 30px;
+    width: 230px;
+    padding: 0px 3px;
+    font-size: 15px;
+    background-color: #cccccc;
+    border:2px solid #b9b9b9;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form .form-group input:focus{
+    border: 2px solid var(--primary-color);
+}
+
+.form .form-group select{
+    height: 30px;
+    width: 510px;
+    padding: 0px 3px;
+    font-size: 15px;
+    background-color: #cccccc;
+    border:2px solid #b9b9b9;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form .form-group select:focus{
+    border: 2px solid var(--primary-color);
+}
+
+.form .form-group textarea{
+    padding: 5px;
+    font-size: 15px;
+    background-color: #cccccc;
+    border:2px solid #b9b9b9;
+    border-radius: 8px;
+    outline: none;
+}
+
+.form .form-group textarea:focus{
+    border: 2px solid var(--primary-color);
+}
+
+.form .form-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form .form-btn button{
+    background-color: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid #b9b9b9;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    transition: 0.3s;
+}
+
+.form .form-btn button:hover{
+    transform: scale(1.2);
+}
