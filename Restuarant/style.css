@@ -554,16 +554,14 @@ html{
 
 
 
-/* Enquire now section */
-.enquiry-form-team{
-    margin: 15px auto;
-}
-
+/* Contact form section */
 .enquiry-form{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 15px auto;
+    background-image: url(./assests/bg2.jpg);
 }
 
 .form-head > h3{
@@ -683,4 +681,96 @@ form{
 
 .form .form-btn button:hover{
     transform: scale(1.2);
+}
+
+
+/* Team Members */
+.team{
+    margin: 20px auto;
+    background-image:url(./assests/bg1.jpg) ;
+}
+.team-head h3{
+    margin-bottom: 70px;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.team-head h3 span{
+    color: var(--primary-color);
+    font-family: 'Grape Nuts', cursive;
+}
+
+.chef-profiles{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    width: 280px;
+    height: 350px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.3s;
+}
+
+.chef-image{
+    height: 270px;
+    width: 250px;
+    border-radius:50%;
+    position: absolute;
+    z-index: 2;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+
+.chef-info{
+    height: 120px;
+    width: 250px;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+
+    transition: 0.3s;
+}
+
+
+.name{
+    color: var(--primary-color);
+}
+
+.chef-social{
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.profile:hover{
+    border-radius: 20px;
+}
+
+
+.profile:hover .chef-info{
+    display: flex;
+    transform: translateY(100px);
+}
+.profile:hover .chef-image{
+    border-radius: 20px;
+    transform: translateY(-100px);
+}
+
+.chef-social i:hover{
+    color: var(--primary-color);
 }
