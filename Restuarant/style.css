@@ -1,5 +1,6 @@
 
 /* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allison&family=Cabin+Sketch&family=Grape+Nuts&family=Quintessential&display=swap');
 
 
@@ -13,6 +14,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
 }
 
 
@@ -48,17 +50,17 @@ html{
     object-fit: cover;
 }
 
-.parent ul{
+.parent nav ul{
     list-style: none;
 }
 
 
-.parent ul li{
+.parent nav ul li{
     margin: 0px 10px;
     display: inline-block;
 }
 
-.parent ul li > a{
+.parent nav ul li > a{
     text-decoration: none;
     color: black;
     font-weight: 500;
@@ -66,7 +68,7 @@ html{
     position: relative;
 }
 
-.parent ul li > a::after{
+.parent nav ul li > a::after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -77,7 +79,7 @@ html{
     display: block;
 }
 
-.parent ul li > a:hover::after{
+.parent nav ul li > a:hover::after{
         /* modify it in the future */
         transition: width 0.3s; 
         background-color: var(--primary-color);
@@ -730,7 +732,6 @@ form{
     transition: 0.3s;
 }
 
-
 .chef-info{
     height: 120px;
     width: 250px;
@@ -745,7 +746,6 @@ form{
     transition: 0.3s;
 }
 
-
 .name{
     color: var(--primary-color);
 }
@@ -757,15 +757,19 @@ form{
 
 }
 
+.chef-social i{
+    cursor: pointer;
+}
+
 .profile:hover{
     border-radius: 20px;
 }
-
 
 .profile:hover .chef-info{
     display: flex;
     transform: translateY(100px);
 }
+
 .profile:hover .chef-image{
     border-radius: 20px;
     transform: translateY(-100px);
@@ -773,4 +777,125 @@ form{
 
 .chef-social i:hover{
     color: var(--primary-color);
+}
+
+.footer{
+    margin: 40px auto 0px;
+    height: 100%;
+    background-color: #cccccc;
+    font-family: 'Poppins', sans-serif;
+}
+
+.foo-info{
+    --foo-info-height:60%;
+    --foo-info-child-height: 300px;
+    height: var(--foo-info-height);
+    padding: 40px 0px 0px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.open-hours{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: var(--foo-info-child-height);
+}
+
+.open-hours h3,.foo-menu h3,.contact h3{
+    margin-bottom: 30px;
+}
+
+.location{
+    height: var(--foo-info-child-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.details{
+    height: 100px;
+    width: 200px;
+}
+
+.details summary{
+    font-weight: 600;
+}
+
+.foo-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foo-menu ul {
+    width: 250px;
+    height: 100px;
+    list-style: none;
+    display: flex;
+    gap: 6px 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.foo-menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.foo-menu ul li a:hover{
+    color: blue;
+}
+
+.contact{
+    width: var(--foo-info-child-height);
+}
+
+.foo-contact-email, .foo-contact-phone{
+    margin: 30px auto;
+}
+
+.foo-contact-email span, .foo-contact-phone span{
+    font-weight: 600;
+}
+
+.foo-social-media{
+    margin: 30px auto;
+}
+
+.foo-social-media p{
+    font-weight: 600;
+    display: inline;
+}
+
+.foo-contact-link{ 
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.icons{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 70px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+.icons i:hover{
+    color: var(--primary-color);
+}
+
+
+.foo-copy{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
