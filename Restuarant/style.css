@@ -806,7 +806,12 @@ form{
 }
 
 .open-hours h3,.foo-menu h3,.contact h3{
+    text-decoration: underline;
     margin-bottom: 30px;
+}
+
+.location h3{
+    text-decoration: underline;
 }
 
 .location{
